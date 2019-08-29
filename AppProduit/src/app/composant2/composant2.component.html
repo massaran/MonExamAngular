@@ -1,0 +1,39 @@
+<div class="detail">
+  <form [formGroup]="produitForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>id:</label>
+      <input placeholder="" formControlName="">
+
+    </div>
+
+    <div>
+      <label>nom:</label>
+      <input placeholder="" formControlName="nom">
+
+    </div>
+
+    <div>
+      <label>texture:</label>
+      <input placeholder="" formControlName="texture">
+
+    </div>
+
+    <div>
+      <label>grammage:</label>
+      <input placeholder="" formControlName="grammage">
+
+    </div>
+
+    <div>
+      <label>couleur:</label>
+      <input placeholder="" formControlName="couleur">
+
+    </div>
+
+    <button type="submit" [disabled]="!produitForm.valid">Valider</button>
+    <button type="button" (click)="onCancel()">Annuler</button>
+  </form>
+
+
+
+</div>

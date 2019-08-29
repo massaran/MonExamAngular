@@ -1,0 +1,13 @@
+<div class="listepro">
+  <h2>Les Produits</h2>
+
+  <ul>
+    <li *ngFor="let produit of mesproduits" (click)="selectProduit(produit)" [class.selected]="isSelected(produit)">
+      <span>{{produit.id}}</span>{{produit.nom}}</li>
+
+  </ul>
+</div>
+<button> Ajouter </button>
+
+<!----<app-composant2 [product]="selectedPlayer" (onSmit)="changeEditionState($event)">
+</app-composant2>-->

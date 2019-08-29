@@ -1,0 +1,9 @@
+.selected {
+  background-color: greenyellow;
+}
+
+.listepro {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+}
